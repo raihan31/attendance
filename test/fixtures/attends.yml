@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  in_date: 2016-06-26
+  in_time: 2016-06-26 04:31:26
+  out_time: 2016-06-26 04:31:26
+  duration: 9.99
+  user_id: 1
+
+two:
+  in_date: 2016-06-26
+  in_time: 2016-06-26 04:31:26
+  out_time: 2016-06-26 04:31:26
+  duration: 9.99
+  user_id: 1
