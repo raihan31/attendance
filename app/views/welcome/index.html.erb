@@ -2,7 +2,7 @@
   <div class="col-md-6">
     <% if @current_employee.attends.present? %>
         <% if @current_employee.attends.last.out_time.present? %>
-            <%= link_to attends_path(in_time: ''), method: :post do%>
+            <%= link_to attends_path, method: :post do%>
                 <button class="btn btn-success">In</button>
             <%end%>
         <% else %>
@@ -11,7 +11,7 @@
             <%end%>
         <% end %>
     <% else %>
-      <%= link_to attends_path(in_time: ''), method: :post do%>
+      <%= link_to attends_path, method: :post do%>
         <button class="btn btn-success">In</button>
       <%end%>
     <% end%>
