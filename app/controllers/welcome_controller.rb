@@ -1,6 +1,5 @@
 class WelcomeController < ApplicationController
   def index
-    @current_employee = current_user
-    @attendances = current_user.attends
+    @attendances = current_user.attends.current_date_attendances
   end
 end

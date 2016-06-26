@@ -4,4 +4,7 @@ class User < ActiveRecord::Base
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable
   has_many :attends
+  def full_name
+    first_name.present? && last_name.present? ? first_name + ' ' + last_name : (first_name.present? ? first_name : last_name)
+  end
 end
