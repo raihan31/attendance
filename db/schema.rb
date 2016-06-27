@@ -13,16 +13,6 @@
 
 ActiveRecord::Schema.define(version: 20160626061529) do
 
-  create_table "attendances", force: :cascade do |t|
-    t.date     "in_date"
-    t.datetime "in_time"
-    t.datetime "out_time"
-    t.float    "duration",   limit: 24
-    t.integer  "user_id",    limit: 4
-    t.datetime "created_at",            null: false
-    t.datetime "updated_at",            null: false
-  end
-
   create_table "attends", force: :cascade do |t|
     t.date     "in_date"
     t.datetime "in_time"

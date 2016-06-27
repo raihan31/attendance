@@ -1,0 +1,15 @@
+.session-section{
+  .panel-shadow{
+    box-shadow: 5px 5px 5px;
+  }
+  .form-section {
+    padding: 3%;
+    a{
+      text-decoration: none;
+      &:hover{
+        background: white;
+        color: black;
+      }
+    }
+  }
+}
